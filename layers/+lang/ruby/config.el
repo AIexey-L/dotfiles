@@ -20,9 +20,9 @@
 (defvar ruby-enable-enh-ruby-mode nil
   "If non-nil, use `enh-ruby-mode' package instead of the built-in Ruby Mode.")
 
-(defvar ruby-version-manager nil
+(defvar ruby-version-manager `rbenv'
   "If non nil, defines the Ruby version manager.
 Possible values are `rbenv', `rvm' or `chruby'.)")
 
-(defvar ruby-test-runner 'ruby-test
+(defvar ruby-test-runner `rspec'
   "Test runner to use. Possible values are `ruby-test', `minitest' or `rspec'.")
